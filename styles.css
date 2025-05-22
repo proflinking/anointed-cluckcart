@@ -1,0 +1,242 @@
+/* styles.css */
+:root {
+    --primary-red: #dc3545;
+    --dark: #212529;
+    --light: #f8f9fa;
+}
+
+body {
+    color: var(--dark);
+    overflow-x: hidden;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-container {
+    position: relative;
+    height: 100%;
+}
+
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+#scrollTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 1000;
+}
+
+footer a:hover {
+    color: var(--primary-red) !important;
+    transition: color 0.3s ease;
+}
+
+#productGrid .card {
+    border: 1px solid var(--light);
+}
+
+#productGrid .card:hover {
+    border-color: var(--primary-red);
+}
+
+.form-range::-webkit-slider-thumb {
+    background: var(--primary-red);
+}
+
+.form-check-input:checked {
+    background-color: var(--primary-red);
+    border-color: var(--primary-red);
+}
+
+.pagination .page-link {
+    color: var(--primary-red);
+}
+
+.pagination .page-item.active .page-link {
+    background-color: var(--primary-red);
+    border-color: var(--primary-red);
+}
+
+.table {
+    border: 1px solid var(--light);
+}
+
+.table thead th {
+    background-color: var(--dark);
+    color: white;
+}
+
+.table tbody tr:hover {
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease;
+}
+
+.quantity-input {
+    width: 70px;
+    text-align: center;
+}
+
+.btn-outline-dark:hover {
+    background-color: var(--primary-red);
+    color: white;
+    border-color: var(--primary-red);
+}
+
+#emptyCartMessage {
+    min-height: 300px;
+}
+
+.card-header {
+    background-color: var(--dark);
+    color: white;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--primary-red);
+    color: white;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: var(--primary-red);
+}
+
+.form-control:focus {
+    border-color: var(--primary-red);
+    box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
+}
+
+.btn-danger:disabled {
+    opacity: 0.7;
+}
+
+#blogPosts .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#blogPosts .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-footer {
+    background-color: transparent;
+    border-top: none;
+}
+
+.btn-sm.btn-danger {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+.nav-tabs .nav-link {
+    color: var(--dark);
+}
+
+.nav-tabs .nav-link.active {
+    background-color: var(--primary-red);
+    color: white;
+    border-color: var(--primary-red);
+}
+
+.nav-tabs .nav-link:hover:not(.active) {
+    border-color: var(--primary-red);
+    color: var(--primary-red);
+}
+
+.card {
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-check-input:checked {
+    background-color: var(--primary-red);
+    border-color: var(--primary-red);
+}
+
+.bg-light {
+    background-color: var(--light) !important;
+}
+
+.card.shadow-sm {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.social-links a {
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+    color: var(--primary-red) !important;
+}
+
+.contact-section iframe {
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.btn-danger.animate__pulse {
+    animation-duration: 2s;
+}
+
+/* New styles for dashboard and extended login form */
+.form-select:focus {
+    border-color: var(--primary-red);
+    box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
+}
+
+textarea.form-control {
+    resize: vertical;
+    min-height: 100px;
+}
+
+#orderHistoryTable th,
+#orderHistoryTable td {
+    vertical-align: middle;
+}
+
+#adminPanel .card-body h5 {
+    margin-top: 1rem;
+    color: var(--dark);
+}
+
+#logoutBtn {
+    transition: background-color 0.3s ease;
+}
+
+#logoutBtn:hover {
+    background-color: #c82333;
+}

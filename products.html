@@ -1,0 +1,240 @@
+<!-- products.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Anointed CluckCart Poultry</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img\logo1.png" alt="Anointed CluckCart" width="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Products Section -->
+    <section class="py-5 mt-5">
+        <div class="container">
+            <h1 class="text-center mb-5 animate__animated animate__fadeIn">Our Poultry Products</h1>
+            
+            <!-- Search Bar -->
+            <div class="row mb-4">
+                <div class="col-md-6 mx-auto">
+                    <div class="input-group animate__animated animate__fadeIn">
+                        <input type="text" class="form-control" id="searchInput" placeholder="Search products...">
+                        <button class="btn btn-danger" type="button" id="searchBtn">Search</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Sidebar Filters -->
+                <div class="col-lg-3 animate__animated animate__slideInLeft">
+                    <div class="card p-3 mb-4">
+                        <h4>Filters</h4>
+                        <div class="mb-3">
+                            <h6>Price Range</h6>
+                            <input type="range" class="form-range" min="0" max="50" step="5" id="priceRange">
+                            <small>$<span id="priceValue">25</span></small>
+                        </div>
+                        <div class="mb-3">
+                            <h6>Category</h6>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="chicken" id="catChicken">
+                                <label class="form-check-label">Chicken</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="eggs" id="catEggs">
+                                <label class="form-check-label">Eggs</label>
+                            </div>
+                        </div>
+                        <button class="btn btn-danger w-100" id="applyFilters">Apply Filters</button>
+                    </div>
+                </div>
+
+                <!-- Products Grid -->
+                <div class="col-lg-9">
+                    <div class="row row-cols-1 row-cols-md-3 g-4" id="productGrid">
+                        <!-- Product Card Template (repeated 10 times) -->
+                        <div class="col animate__animated animate__zoomIn">
+                            <div class="card h-100">
+                                <img src="img\poultry6.jpg" class="card-img-top" alt="Chicken">
+                                <div class="card-body">
+                                    <h5 class="card-title">Chicken thigh</h5>
+                                    <p class="card-text">$10.99</p>
+                                    <a href="#" class="btn btn-danger add-to-cart">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col animate__animated animate__zoomIn">
+                            <div class="card h-100">
+                                <img src="img\egg image1.jpg" class="card-img-top" alt="Chicken">
+                                <div class="card-body">
+                                    <h5 class="card-title">crate of egg</h5>
+                                    <p class="card-text">$13.89</p>
+                                    <a href="#" class="btn btn-danger add-to-cart">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col animate__animated animate__zoomIn">
+                            <div class="card h-100">
+                                <img src="img\gizzar image.jpeg" class="card-img-top" alt="Chicken">
+                                <div class="card-body">
+                                    <h5 class="card-title">gizzar</h5>
+                                    <p class="card-text">$11.95</p>
+                                    <a href="#" class="btn btn-danger add-to-cart">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col animate__animated animate__zoomIn">
+                            <div class="card h-100">
+                                <img src="img\p image5.jpg" class="card-img-top" alt="Chicken">
+                                <div class="card-body">
+                                    <h5 class="card-title">Whole Chicken</h5>
+                                    <p class="card-text">$15.99</p>
+                                    <a href="#" class="btn btn-danger add-to-cart">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col animate__animated animate__zoomIn">
+                            <div class="card h-100">
+                                <img src="img\fresh chicken.png" class="card-img-top" alt="Chicken">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fresh chicken Drumstick</h5>
+                                    <p class="card-text">$17.99</p>
+                                    <a href="#" class="btn btn-danger add-to-cart">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col animate__animated animate__zoomIn">
+                            <div class="card h-100">
+                                <img src="poultry 1.jpeg" class="card-img-top" alt="Chicken">
+                                <div class="card-body">
+                                    <h5 class="card-title">Whole Cock</h5>
+                                    <p class="card-text">$18.49</p>
+                                    <a href="#" class="btn btn-danger add-to-cart">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col animate__animated animate__zoomIn">
+                            <div class="card h-100">
+                                <img src="img\poultry7.jpg" class="card-img-top" alt="Chicken">
+                                <div class="card-body">
+                                    <h5 class="card-title">Day old chicks</h5>
+                                    <p class="card-text">$15.99</p>
+                                    <a href="#" class="btn btn-danger add-to-cart">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col animate__animated animate__zoomIn">
+                            <div class="card h-100">
+                                <img src="img\poultry10.jpg" class="card-img-top" alt="Chicken">
+                                <div class="card-body">
+                                    <h5 class="card-title">Chicken Breast</h5>
+                                    <p class="card-text">$25.99</p>
+                                    <a href="#" class="btn btn-danger add-to-cart">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col animate__animated animate__zoomIn">
+                            <div class="card h-100">
+                                <img src="img\poultry8.jpg" class="card-img-top" alt="Chicken">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fresh chicken</h5>
+                                    <p class="card-text">$19.99</p>
+                                    <a href="#" class="btn btn-danger add-to-cart">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+
+                    <!-- Pagination -->
+                    <nav aria-label="Product pagination" class="mt-4">
+                        <ul class="pagination justify-content-center animate__animated animate__fadeIn">
+                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer  -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="products.html" class="text-white">Products</a></li>
+                        <li><a href="cart.html" class="text-white">Cart</a></li>
+                        <li><a href="blog.html" class="text-white">Blog</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="mailto:support@anointedcluckcart.com" class="text-white">Email Support</a></li>
+                        <li><a href="tel:+233542317726/+233247686709" class="text-white">Call Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Payment Options</h5>
+                    <ul class="list-unstyled">
+                        <li><span class="text-white">Bank Transfer</span></li>
+                        <li><span class="text-white">Mobile Money</span></li>
+                        <li><span class="text-white">Cash on Delivery</span></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Join Our Community</h5>
+                    <div class="social-links mb-3">
+                        <a href="#" class="text-white me-2" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <form class="d-flex">
+                        <input type="email" class="form-control me-2" placeholder="Your email">
+                        <button class="btn btn-danger" type="submit">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button id="scrollTop" class="btn btn-danger"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

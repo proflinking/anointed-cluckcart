@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anointed CluckCart Poultry</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img\logo1.png" alt="Anointed CluckCart" width="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="video-container">
+            <video  width="100%" height="100%"autoplay muted loop preload="auto">
+                <source src="img\videoplayback.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay">
+                <div class="container text-center text-white">
+                    <h1 class="display-3 animate__animated animate__fadeIn">Welcome to Anointed CluckCart</h1>
+                    <p class="lead animate__animated animate__fadeIn">Premium Poultry Products Delivered Fresh</p>
+                    <a href="products.html" class="btn btn-danger btn-lg mt-3 animate__animated animate__bounceIn">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+ <!-- Why Choose Us (Updated with Icons) -->
+ <section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5 animate__animated animate__fadeIn">Why Choose Us?</h2>
+        <div class="row g-4">
+            <div class="col-md-4 animate__animated animate__fadeInUp">
+                <div class="card text-center border-0">
+                    <div class="card-body">
+                        <i class="fas fa-check-circle fa-3x mb-3 text-danger"></i>
+                        <h5 class="card-title">Quality Guaranteed</h5>
+                        <p class="card-text">Fresh, organic poultry products</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+                <div class="card text-center border-0">
+                    <div class="card-body">
+                        <i class="fas fa-shipping-fast fa-3x mb-3 text-danger"></i>
+                        <h5 class="card-title">Fast Delivery</h5>
+                        <p class="card-text">Farm to table in record time</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+                <div class="card text-center border-0">
+                    <div class="card-body">
+                        <i class="fas fa-users fa-3x mb-3 text-danger"></i>
+                        <h5 class="card-title">Trusted Farmers</h5>
+                        <p class="card-text">Sourced from top local growers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+   
+    <!-- Popular Products (Slider) -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 animate__animated animate__fadeIn">Popular Products</h2>
+            <div id="popularProductsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-md-4 animate__animated animate__zoomIn">
+                                <div class="card">
+                                    <img src="img\p image2.jpg" class="card-img-top" alt="Whole Chicken">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Whole Chicken</h5>
+                                        <p class="card-text fw-bold">$15.99</p>
+                                        <button class="btn btn-danger add-to-cart mb-2">Add to Cart</button>
+                                        <p class="small mb-0">Farmer John - <span class="text-warning">★★★★★</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-4 animate__animated animate__zoomIn">
+                                <div class="card">
+                                    <img src="img\egg image3.jpg" class="card-img-top" alt="Dozen Eggs">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Dozen Free-Range Eggs</h5>
+                                        <p class="card-text fw-bold">$5.99</p>
+                                        <button class="btn btn-danger add-to-cart mb-2">Add to Cart</button>
+                                        <p class="small mb-0">Farmer Jane - <span class="text-warning">★★★★☆</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#popularProductsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#popularProductsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 animate__animated animate__fadeIn">How It Works?</h2>
+            <div class="row text-center">
+                <div class="col-md-4 animate__animated animate__fadeInUp">
+                    <img src="img\p image5.jpg" alt="Browse" class="img-fluid mb-3" style="max-width: 300px;">
+                    <h5>Find the Best Poultry</h5>
+                    <p>Browse from top-rated farmers</p>
+                </div>
+                <div class="col-md-4 animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+                    <img src="img\p image3.jpg" alt="Order" class="img-fluid mb-3" style="max-width: 300px;">
+                    <h5>Place Your Order</h5>
+                    <p>Safe and easy payment options</p>
+                </div>
+                <div class="col-md-4 animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+                    <img src="img\egg image4.jpg" alt="Delivery" class="img-fluid mb-3" style="max-width: 300px;">
+                    <h5>Enjoy Farm-Fresh</h5>
+                    <p>Delivered to your doorstep</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Farmers Spotlight -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 animate__animated animate__fadeIn">Farmers Spotlight</h2>
+            <div class="row g-4">
+                <div class="col-md-4 animate__animated animate__zoomIn">
+                    <div class="card h-100">
+                        <img src="img\princes4.jpg" class="card-img-top" alt="Farmer John">
+                        <div class="card-body">
+                            <h5 class="card-title">Prince Akoto</h5>
+                            <p class="card-text"><strong>Location:</strong> kumasi</p>
+                            <p class="card-text">Prince has been raising free-range chickens for over 20 years, ensuring top quality and care.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 animate__animated animate__zoomIn" style="animation-delay: 0.2s;">
+                    <div class="card h-100">
+                        <img src="img\abi image3.jpg" class="card-img-top" alt="Farmer Jane">
+                        <div class="card-body">
+                            <h5 class="card-title"> Abigail Tweneboah</h5>
+                            <p class="card-text"><strong>Location:</strong> Accra</p>
+                            <p class="card-text">Abigail specializes in organic eggs, nurtured with love on her family farm.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 animate__animated animate__zoomIn" style="animation-delay: 0.2s;">
+                    <div class="card h-100">
+                        <img src="img\elijah1.jpg" class="card-img-top" alt="Farmer Jane">
+                        <div class="card-body">
+                            <h5 class="card-title">Elijah Lanyan</h5>
+                            <p class="card-text"><strong>Location:</strong> Clucktown, CT</p>
+                            <p class="card-text">Elijah specializes in organic poultry product, ensuring top quality and Fast delivery.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Latest Blog Posts & Tips -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 animate__animated animate__fadeIn">Latest Blog Posts & Tips</h2>
+            <div class="row g-4">
+                <div class="col-md-6 animate__animated animate__zoomIn">
+                    <div class="card">
+                        <img src="img\egg image3.jpg" class="card-img-top" alt="Egg Blog">
+                        <div class="card-body">
+                            <h5 class="card-title">How to Choose the Best Free-Range Eggs?</h5>
+                            <p class="card-text">Learn the secrets to picking the freshest eggs from our experts.</p>
+                            <a href="blog.html" class="btn btn-danger btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 animate__animated animate__zoomIn" style="animation-delay: 0.2s;">
+                    <div class="card">
+                        <img src="img\p image5.jpg" class="card-img-top" alt="Chicken Blog">
+                        <div class="card-body">
+                            <h5 class="card-title">5 Things to Know Before Raising Backyard Chickens!</h5>
+                            <p class="card-text">Essential tips for starting your own flock at home.</p>
+                            <a href="blog.html" class="btn btn-danger btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 animate__animated animate__fadeIn">Special Offers</h2>
+            <div class="row g-4">
+                <div class="col-md-6 animate__animated animate__bounceIn">
+                    <div class="card text-white bg-danger">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">10% OFF First Order</h5>
+                            <p class="card-text">Sign Up Now!</p>
+                            <a href="login.html" class="btn btn-light">Get Deal</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 animate__animated animate__bounceIn" style="animation-delay: 0.2s;">
+                    <div class="card text-white bg-danger">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Buy 5 Dozen Eggs</h5>
+                            <p class="card-text">Get 1 Dozen Free!</p>
+                            <a href="products.html" class="btn btn-light">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 animate__animated animate__fadeIn">Customer Reviews</h2>
+            <div class="row g-4">
+                <div class="col-md-4 animate__animated animate__fadeInUp">
+                    <div class="card">
+                        <div class="card-body d-flex align-items-center">
+                            <img src="IMG-20250109-WA0003.jpg" class="rounded-circle me-3" alt="Mike L." style="width: 60px; height: 60px;">
+                            <div>
+                                <p class="card-text">"Best chicken I’ve ever tasted! So fresh!"</p>
+                                <p class="mb-0"><strong>mark Agbeko.</strong> - <span class="text-warning">★★★★★</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+                    <div class="card">
+                        <div class="card-body d-flex align-items-center">
+                            <img src="IMG-20241224-WA0014.jpg" class="rounded-circle me-3" alt="Sarah K." style="width: 60px; height: 60px;">
+                            <div>
+                                <p class="card-text">"Fast delivery and amazing quality!"</p>
+                                <p class="mb-0"><strong>Gladys Gnaza</strong>.</strong> - <span class="text-warning">★★★★☆</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+                    <div class="card">
+                        <div class="card-body d-flex align-items-center">
+                            <img src="img\emma.jpg" class="rounded-circle me-3" alt="Sarah K." style="width: 60px; height: 60px;">
+                            <div>
+                                <p class="card-text">"Truste farmers and amazing quality!"</p>
+                                <p class="mb-0"><strong>Emmanuel Lanyan</strong>.</strong> - <span class="text-warning">★★★★☆</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Join the Poultry Community -->
+    <section class="py-5 text-center bg-danger text-white">
+        <div class="container">
+            <h2 class="mb-4 animate__animated animate__fadeIn">Join the Poultry Community</h2>
+            <p class="lead mb-4 animate__animated animate__fadeIn" style="animation-delay: 0.2s;">Sign up for exclusive deals, tips, and farm updates.</p>
+            <form class="d-flex justify-content-center animate__animated animate__bounceIn" style="animation-delay: 0.4s;">
+                <input type="email" class="form-control w-25 me-2" placeholder="Your email" required>
+                <button class="btn btn-light" type="submit">Sign Up</button>
+            </form>
+        </div>
+    </section>
+
+   <!-- Footer  -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="products.html" class="text-white">Products</a></li>
+                        <li><a href="cart.html" class="text-white">Cart</a></li>
+                        <li><a href="blog.html" class="text-white">Blog</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="mailto:support@anointedcluckcart.com" class="text-white">Email Support</a></li>
+                        <li><a href="tel:+233542317726/+233247686709" class="text-white">Call Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Payment Options</h5>
+                    <ul class="list-unstyled">
+                        <li><span class="text-white">Bank Transfer</span></li>
+                        <li><span class="text-white">Mobile Money</span></li>
+                        <li><span class="text-white">Cash on Delivery</span></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Join Our Community</h5>
+                    <div class="social-links mb-3">
+                        <a href="#" class="text-white me-2" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <form class="d-flex">
+                        <input type="email" class="form-control me-2" placeholder="Your email">
+                        <button class="btn btn-danger" type="submit">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button id="scrollTop" class="btn btn-danger"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+</body>
+</html>
